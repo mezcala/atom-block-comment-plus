@@ -1,6 +1,6 @@
 # block-comment-plus
 
-The missing block comment package for Atom.
+Comment your code with block comments.
 
 ## Installation
 
