@@ -29,6 +29,7 @@ Windows / Linux:
 - Markdown
 - Ruby
 - Elm
+- PHP
 
 ## Features
 - Based on grammars at start and end points of selection
