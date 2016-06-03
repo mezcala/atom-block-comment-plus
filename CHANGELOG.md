@@ -1,4 +1,4 @@
-## 0.2.1
+## 0.3.0
 - Keeps selection after commenting/uncommenting
 
 ## 0.2.0
