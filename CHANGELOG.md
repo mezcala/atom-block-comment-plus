@@ -1,3 +1,6 @@
+## 0.2.1
+- Keeps selection after commenting/uncommenting
+
 ## 0.2.0
 - Fixing [issue #1](https://github.com/whoisthecoon/atom-block-comment-plus/issues/1):
   the package threw an error when trying to uncomment a line-commented line.
