@@ -4,32 +4,32 @@ import path from 'path';
 import languages from '../lib/languages.js';
 
 describe('[HTML/PHP]', () => {
-	let editor;
-	let editorView;
-	let activationPromise;
+  let editor;
+  let editorView;
+  let activationPromise;
 
   beforeEach(() => {
-		workspaceElement = atom.views.getView(atom.workspace);
+    workspaceElement = atom.views.getView(atom.workspace);
     atom.project.setPaths([path.join(__dirname, 'fixtures')]);
 
-		waitsForPromise(() => {
-			return atom.packages.activatePackage('language-php');
-		});
+    waitsForPromise(() => {
+      return atom.packages.activatePackage('language-php');
+    });
 
-		waitsForPromise(() => {
-			return atom.packages.activatePackage('language-html');
-		});
+    waitsForPromise(() => {
+      return atom.packages.activatePackage('language-html');
+    });
 
-		waitsForPromise(() => {
-			return atom.workspace.open('sample.html.php');
-		});
+    waitsForPromise(() => {
+      return atom.workspace.open('sample.html.php');
+    });
 
-		runs(() => {
-			editor = atom.workspace.getActiveTextEditor();
+    runs(() => {
+      editor = atom.workspace.getActiveTextEditor();
       editorView = atom.views.getView(editor);
       activationPromise = atom.packages.activatePackage("block-comment-plus");
-		});
-	});
+    });
+  });
 
   it('should add an HTML comment block', () => {
     editor.setCursorBufferPosition([7, 0]);
@@ -38,8 +38,8 @@ describe('[HTML/PHP]', () => {
     atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
 
     waitsForPromise(() => {
-			return activationPromise;
-		});
+      return activationPromise;
+    });
 
     runs(() => {
       expect(
@@ -59,8 +59,8 @@ describe('[HTML/PHP]', () => {
     atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
 
     waitsForPromise(() => {
-			return activationPromise;
-		});
+      return activationPromise;
+    });
 
     runs(() => {
       expect(
@@ -80,8 +80,8 @@ describe('[HTML/PHP]', () => {
     atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
 
     waitsForPromise(() => {
-			return activationPromise;
-		});
+      return activationPromise;
+    });
 
     runs(() => {
       expect(
@@ -100,8 +100,8 @@ describe('[HTML/PHP]', () => {
     atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
 
     waitsForPromise(() => {
-			return activationPromise;
-		});
+      return activationPromise;
+    });
 
     runs(() => {
       expect(
@@ -121,8 +121,8 @@ describe('[HTML/PHP]', () => {
     atom.commands.dispatch(editorView, 'block-comment-plus:toggle');
 
     waitsForPromise(() => {
-			return activationPromise;
-		});
+      return activationPromise;
+    });
 
     runs(() => {
       expect(
