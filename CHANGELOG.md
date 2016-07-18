@@ -1,3 +1,6 @@
+## 0.4.0
+- Added Julia support ([#5](https://github.com/whoisthecoon/atom-block-comment-plus/issues/5))
+
 ## 0.3.0
 - Keeps selection after commenting/uncommenting
 
