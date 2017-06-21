@@ -1,3 +1,6 @@
+## 0.5.1
+- Improving config option for wrapping commented code: you can now choose between spaces, new lines or none (default)
+
 ## 0.5.0
 - Added a config option to add a space after and before comment signs (issue #4)
 
